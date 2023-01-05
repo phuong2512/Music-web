@@ -1,0 +1,169 @@
+.footer {
+    position: relative;
+    height: auto;
+    padding: 50px 100px;
+    background: #111;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.about-us {
+    color: rgb(235, 228, 228);
+    margin-right: 30px;
+}
+
+.content-abu {
+    color: #999;
+}
+
+h2 {
+    position: relative;
+    font-weight: 500;
+}
+
+h2:before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 70px;
+    height: 1px;
+}
+
+hr{
+    border-color: #3c2d57;
+}
+.social-icon {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    font-size: 25px;
+}
+
+.ft {
+    color: #999;
+}
+
+.ft:hover {
+    color: orange;
+}
+
+.links {
+    color: rgb(235, 228, 228);
+    margin-left: 150px;
+}
+
+.link {
+    list-style: none;
+}
+
+.link-ft {
+    color: #999999;
+    text-decoration: none;
+}
+
+.link-ft {
+    display: inline-block;
+    margin-left: -40px;
+}
+
+.link-ft:hover {
+    color: rgb(235, 228, 228);
+}
+
+.contact {
+    color: rgb(235, 228, 228);
+    margin-left: 300px;
+}
+
+.info {
+    list-style: none;
+    margin-left: -40px;
+}
+
+.contact .info li {
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+}
+
+.contact .info i {
+    color: rgb(235, 228, 228);
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.contact .info li,
+li a {
+    color: #999;
+    text-decoration: none;
+}
+
+.form__field {
+    padding: 1.4rem 0;
+    position: relative;
+    display: block;
+}
+
+input[type="email"] {
+    width: 150px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 4px;
+    outline: none;
+    padding: 12px 14px;
+    transition: 0.6s ease-in-out;
+}
+
+input[type="email"]:focus {
+    width: 300px;
+    background-color: lightblue;
+}
+
+.btn {
+    display: inline-block;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    border: 0;
+    outline: 0;
+    padding: 0;
+    margin-top: 16px;
+    transition: all 200ms ease-in;
+    cursor: pointer;
+}
+
+.btn--primary {
+    background: #222;
+    color: #fff;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
+    border-radius: 2px;
+    padding: 8px 24px;
+}
+
+.btn--primary:hover {
+    background: orange;
+}
+
+.subscribe {
+    color: rgb(235, 228, 228);
+    margin-left: 150px;
+}
+
+.subscribe ul {
+    list-style: none;
+    margin-left: 0px;
+}
+
+.social-icon li {
+    padding: 0 20px 0;
+}

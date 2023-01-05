@@ -1,0 +1,469 @@
+body {
+    background-color: #231b2e;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+    color: #7558ac;
+}
+
+button {
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #3c2d57;
+    width: 100%;
+}
+
+.bi {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.song:hover {
+    color: #7558ac;
+}
+
+.singer:hover {
+    color: rgb(133, 42, 133);
+}
+
+/*--------------------------------------------------- Music Player ---------------------------------------------------*/
+.music-player {
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    background-color: #130c1c;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.music-playing {
+    color: white;
+    float: left;
+    padding: 0 6px;
+}
+
+.music-playing-img {
+    width: 55px;
+    height: 55px;
+    padding: 0 5px;
+}
+
+.music-playing h3 {
+    margin-bottom: 4px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.music-playing h4 {
+    margin-top: 8px;
+    margin-bottom: auto;
+}
+
+.music-player button {
+    height: 30px;
+    width: 30px;
+}
+
+.music-player .audio-player {
+    overflow: hidden;
+    width: 230px;
+}
+
+.music-player .audio-player #song {
+    margin-left: -40px;
+    text-align: center;
+}
+
+/*-------------------------x------------------------- Music Player -------------------------x-------------------------*/
+
+/*------------------------------------------------------------- Content -------------------------------------------------------------*/
+.content {
+    display: flex;
+    padding-top: 79px;
+}
+
+/*--------------------------------------------------- Sidebar 1 ---------------------------------------------------*/
+.sidebar-one {
+    flex: 1;
+    padding: 0 16px;
+    position: relative;
+}
+
+.utility-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.utility-list .utility {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    padding: 8px 25px;
+    margin-bottom: 15px;
+    color: #c4c3c5;
+}
+
+.utility-list .utility:hover {
+    color: white;
+    background-color: #3a3344;
+}
+
+
+
+/*-------------------------x------------------------- Sidebar 1 -------------------------x-------------------------*/
+
+/*--------------------------------------------------- Sidebar 2 ---------------------------------------------------*/
+.sidebar-two {
+    flex: 1.5;
+    padding: 0 16px;
+    font-size: 14px;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidebar-two li {
+    float: left;
+    width: 350px;
+    margin: 0px 0 5px;
+    border-bottom: #3c2d57 solid 1px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+.sidebar-two li .top-number {
+    float: left;
+    width: 31px;
+    height: 31px;
+    font-size: 25px;
+    margin: 28px 20px 0 5px;
+    text-align: center;
+}
+
+.sidebar-two li .top-song-info {
+    float: left;
+}
+
+.sidebar-two li .top-number.top-song-1 {
+    background: red;
+    border: red solid 3px;
+    color: black;
+}
+
+.sidebar-two li .top-number.top-song-2 {
+    background: aqua;
+    border: aqua solid 2px;
+    color: black;
+}
+
+.sidebar-two li .top-number.top-song-3 {
+    background: greenyellow;
+    border: greenyellow solid 1px;
+    color: black;
+}
+
+.sidebar-two li .top-number {
+    background: #402e61;
+    border: #402e61 solid 0.5px;
+    color: white;
+}
+
+.sidebar-two li .top-song-info h3 {
+    margin-bottom: 4px;
+}
+
+.sidebar-two li .top-song-info h4 {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #acacac;
+}
+
+.sidebar-two li img.image-top {
+    float: right;
+    height: 55px;
+    width: 55px;
+    margin-top: 11.75px;
+}
+
+.sidebar-two li:hover {
+    background-color: #3a3344;
+}
+
+.top-song-info.top-1 .song:hover {
+    color: red;
+}
+
+.top-song-info.top-2 .song:hover {
+    color: aqua;
+}
+
+.top-song-info.top-3 .song:hover {
+    color: greenyellow;
+}
+
+
+
+
+/*-------------------------x------------------------- Sidebar 2 -------------------------x-------------------------*/
+
+/*--------------------------------------------------- Main  ---------------------------------------------------*/
+.main-content {
+    position: relative;
+    flex: 5;
+    padding: 0 16px;
+    background-color: #170f23;
+
+}
+
+/*--------------------------------------------- Search ---------------------------------------------*/
+.search {
+    width: 100%;
+    display: flex;
+    padding-top: 16px;
+}
+
+.search-form {
+    width: 100%;
+    background: #231b2e;
+    display: flex;
+    border-radius: 60px;
+    backdrop-filter: blur(4px);
+}
+
+.search-input {
+    background: transparent;
+    flex: 1;
+    outline: none;
+    margin: 15px 15px;
+    border: 0;
+    font-size: 25px;
+    color: white;
+}
+
+::placeholder {
+    color: #acacac;
+}
+
+.search-button {
+    border: 0;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    background: transparent;
+    margin: 5px 5px;
+}
+
+.search-button img {
+    width: 40px
+}
+
+.search-results div {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.search-results .song b {
+    display: block;
+    text-align: center;
+}
+
+.search-results .song p {
+    display: block;
+    text-align: center;
+    margin: 1vh 0vh;
+    font-size: 14px;
+    color: #acacac;
+}
+
+
+/*----------------------x---------------------- Search ----------------------x----------------------*/
+
+/*--------------------------------------------- Outstanding ---------------------------------------------*/
+
+.outstanding-song {
+    display: inline-block;
+    position: relative;
+    padding: 0 35px 0;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.outstanding-song-name {
+    display: block;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+img.outstanding-image {
+    height: 300px;
+    width: 300px;
+    transition: transform 0.7s;
+}
+
+.outstanding-song:hover .outstanding-image {
+    transform: scale(1.5);
+}
+
+/*----------------------x---------------------- Outstanding ----------------------x----------------------*/
+
+/*--------------------------------------------- New-song ---------------------------------------------*/
+.new-song-list {
+    display: flex;
+    height: auto;
+}
+
+.list {
+    flex-direction: column;
+    width: 33.33%;
+    padding: 10px;
+    min-width: 307.22px;
+}
+
+.new-song {
+    align-items: center;
+    display: flex;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.new-song:hover {
+    background-color: #2f2739;
+}
+
+.new-song-image {
+    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+}
+
+.new-song-image img {
+    height: auto;
+    width: 100%;
+    min-width: 60px;
+    min-height: 60px;
+}
+
+.new-song-info h5 {
+    margin-top: 5px;
+}
+
+.new-song-info h3 {
+    margin-bottom: 0px;
+}
+
+/*----------------------x---------------------- New-song ----------------------x----------------------*/
+/*--------------------------------------------- Top-singer ---------------------------------------------*/
+.top-singer-list {
+    display: flex;
+    align-items: center;
+}
+
+.singer-top {
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 14px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+.singer-top img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s;
+    opacity: 1;
+    background: black;
+
+}
+
+.singer-top:hover img {
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+.singer-top-info {
+    position: absolute;
+    padding: 0 16px;
+    left: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.singer-top a:hover {
+    color: white;
+}
+
+
+
+/*----------------------x---------------------- Top-singer ----------------------x----------------------*/
+.album-list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.album {
+    width: 20%;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 14px;
+    overflow: hidden;
+    border-radius: 16px;
+    position: relative;
+}
+
+.album img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.7s;
+    opacity: 1;
+    background: black;
+
+}
+
+.album:hover img {
+    transform: scale(1.5);
+    opacity: 0.5;
+}
+
+.album a:hover {
+    color: white;
+}
+
+/*-------------------------x------------------------- Main -------------------------x-------------------------*/
+/*------------------------------x------------------------------ Content ------------------------------x------------------------------*/
+
+/*------------------------------------------------------------- Footer -------------------------------------------------------------*/
+
+/*------------------------------x------------------------------ Footer ------------------------------x------------------------------*/

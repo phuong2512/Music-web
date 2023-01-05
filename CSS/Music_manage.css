@@ -1,0 +1,56 @@
+body {
+    background-color: #231b2e;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+div {
+    display: inline-block;
+    padding: 5px 0px;
+    align-items: center;
+}
+
+.musiclist {
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+}
+
+.musiclist .song b {
+    display: block;
+    text-align: center;
+}
+
+.musiclist .song p {
+    display: block;
+    text-align: center;
+    margin: 1vh 0vh;
+    font-size: 14px;
+    color: #acacac;
+}
+
+.musiclist h1 {
+    text-align: center;
+}
+
+.musiclist h2 {
+    text-align: right;
+    margin-right: 25px;
+}
+
+.song {
+    padding: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+    color: #7558ac;
+}

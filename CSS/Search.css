@@ -1,0 +1,50 @@
+body {
+    background-color: #231b2e;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+a:hover {
+    color: #7558ac;
+}
+
+.search {
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 120px;
+    width: 80%;
+    border: 5px solid #3c2d57;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search div {
+    display: inline-block;
+    padding: 5px 10px;
+}
+
+.search .song b {
+    display: block;
+    text-align: center;
+}
+
+.search .song p {
+    display: block;
+    text-align: center;
+    margin: 1vh 0vh;
+    font-size: 14px;
+    color: #acacac;
+}
+
